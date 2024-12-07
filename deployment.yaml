@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world
+  labels:
+    app: hello-world
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-world
+  template:
+    metadata:
+      labels:
+        app: hello-world
+    spec:
+      containers:
+      - name: hello-world
+        image: nginx:latest
+        ports:
+        - containerPort: 82
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world-git-service
+  namespace: default
+  annotations:
+    cloud.google.com/load-balancer-type: "Internal"
+  labels:
+    app: hello-world
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 192.168.2.240 # Specify an internal IP from your VPC
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 82 # Match containerPort in the Deployment
+  selector:
+    app: hello-world # Match Deployment labels
+  externalTrafficPolicy: Cluster
