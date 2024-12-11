@@ -1,8 +1,8 @@
-# Define substitutions (optional but helps with versioning)
+# Define substitutions
 substitutions:
-  _SERVICE_NAME: 'hello-world'  # Cloud Run service name
+  _DEPLOYMENT_NAME: 'hello-world'
   _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.2'
-  _REGION: 'asia-south1'  # Cloud Run deployment region
+  _REGION: 'asia-south1'
 
 # Specify the logs bucket to store build logs
 logsBucket: gs://cloud-build--pvt-logs
@@ -16,7 +16,7 @@ steps:
       - |
         echo "Listing files in the current build context:"
         ls -la
-        echo "Service Name: ${_SERVICE_NAME}"
+        echo "Deployment Name: ${_DEPLOYMENT_NAME}"
         echo "Image Name: ${_IMAGE}"
 
   # Step 2: Build the Docker image
@@ -32,14 +32,29 @@ steps:
     args:
       - 'run'
       - 'deploy'
-      - '${_SERVICE_NAME}'
+      - '${_DEPLOYMENT_NAME}'
       - '--image'
       - '${_IMAGE}'
       - '--region'
       - '${_REGION}'
       - '--platform'
       - 'managed'
-      - '--allow-unauthenticated'  # Allow public access; remove this for restricted access
+      - '--allow-unauthenticated'
+
+  # Step 5: Add IAM policy binding to allow public access
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'beta'
+      - 'run'
+      - 'services'
+      - 'add-iam-policy-binding'
+      - '${_DEPLOYMENT_NAME}'
+      - '--region'
+      - '${_REGION}'
+      - '--member'
+      - 'allUsers'
+      - '--role'
+      - 'roles/run.invoker'
 
 # Specify images to build
 images:
