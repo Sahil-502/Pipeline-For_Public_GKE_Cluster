@@ -39,7 +39,7 @@ steps:
       - '${_REGION}'
       - '--platform'
       - 'managed'
-      - '--allow-unauthenticated'
+      #- '--allow-unauthenticated'
 
   # Step 5: Add IAM policy binding to allow public access
   - name: 'gcr.io/cloud-builders/gcloud'
