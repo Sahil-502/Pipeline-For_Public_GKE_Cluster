@@ -1,6 +1,6 @@
 # Define substitutions
 substitutions:
-  _DEPLOYMENT_NAME: 'hello-world'
+  _DEPLOYMENT_NAME: 'hello-world2'
   _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.3'
   _REGION: 'asia-south1'
 
