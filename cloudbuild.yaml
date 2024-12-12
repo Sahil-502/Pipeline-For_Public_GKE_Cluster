@@ -1,7 +1,7 @@
 # Define substitutions
 substitutions:
   _DEPLOYMENT_NAME: 'hello-world'
-  _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.2'
+  _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.3'
   _REGION: 'asia-south1'
 
 # Specify the logs bucket to store build logs
@@ -42,19 +42,19 @@ steps:
       #- '--allow-unauthenticated'
 
   # Step 5: Add IAM policy binding to allow public access
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args:
-      - 'beta'
-      - 'run'
-      - 'services'
-      - 'add-iam-policy-binding'
-      - '${_DEPLOYMENT_NAME}'
-      - '--region'
-      - '${_REGION}'
-      - '--member'
-      - 'allUsers'
-      - '--role'
-      - 'roles/run.invoker'
+  # - name: 'gcr.io/cloud-builders/gcloud'
+  #   args:
+  #     - 'beta'
+  #     - 'run'
+  #     - 'services'
+  #     - 'add-iam-policy-binding'
+  #     - '${_DEPLOYMENT_NAME}'
+  #     - '--region'
+  #     - '${_REGION}'
+  #     - '--member'
+  #     - 'allUsers'
+  #     - '--role'
+  #     - 'roles/run.invoker'
 
 # Specify images to build
 images:
