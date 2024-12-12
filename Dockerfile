@@ -7,7 +7,7 @@ COPY index.htm /usr/share/nginx/html/2/
 COPY default.conf /etc/nginx/conf.d/
 
 # Expose port 82
-EXPOSE 8080
+EXPOSE 82
 
 # Start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
