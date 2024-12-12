@@ -49,7 +49,7 @@ steps:
   ##    - 'deployment/hello-world'
   ##    - 'hello-world=asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.1'
     env:
-      - 'CLOUDSDK_COMPUTE_REGION=asia-south1'
+      - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
       - 'CLOUDSDK_CONTAINER_CLUSTER=gke-cluster'
 
 # Specify images to build
