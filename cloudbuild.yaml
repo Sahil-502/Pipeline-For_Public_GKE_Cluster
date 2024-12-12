@@ -1,7 +1,7 @@
 # Define substitutions
 substitutions:
-  _DEPLOYMENT_NAME: 'hello-world2'
-  _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.3'
+  _DEPLOYMENT_NAME: 'hello-world4'
+  _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.4'
   _REGION: 'asia-south1'
 
 # Specify the logs bucket to store build logs
@@ -39,6 +39,8 @@ steps:
       - '${_REGION}'
       - '--platform'
       - 'managed'
+      - '--ingress'
+      - 'internal-and-cloud-load-balancing'  # Replace with 'all' or 'internal' as needed
       #- '--allow-unauthenticated'
 
   # Step 5: Add IAM policy binding to allow public access
