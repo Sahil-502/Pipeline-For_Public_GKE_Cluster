@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world-cont
-        image: nginx:latest
+        image: asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-1.1
         ports:
         - containerPort: 82
 ---
