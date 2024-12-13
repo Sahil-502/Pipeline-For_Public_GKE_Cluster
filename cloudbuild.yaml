@@ -30,14 +30,14 @@ steps:
 
 # Step 4 only for first time deply:
   # Step 4: Apply the initial deployment if it doesn't exist
- - name: 'gcr.io/cloud-builders/kubectl'
-   args:
-     - 'apply'
-     - '-f'
-     - 'deployment.yaml'
-   env:
-     - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
-     - 'CLOUDSDK_CONTAINER_CLUSTER=gke-cluster'
+  - name: 'gcr.io/cloud-builders/kubectl'
+    args:
+      - 'apply'
+      - '-f'
+      - 'deployment.yaml'
+    env:
+      - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=gke-cluster'
 
   # Step 4: Deploy the application to GKE
   # - name: 'gcr.io/cloud-builders/kubectl'
