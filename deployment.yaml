@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-world-git-service
+  name: hello-world-service
   namespace: default
   annotations:
     cloud.google.com/load-balancer-type: "Internal"
