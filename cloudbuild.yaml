@@ -2,6 +2,8 @@
 substitutions:
   _DEPLOYMENT_NAME: 'hello-world'
   _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-1.2'
+  _DC_CLUSTER: 'gke-dc-cluster'
+  _DR_CLUSTER: 'gke-dr-cluster'
 
 # Specify the logs bucket to store build logs
 logsBucket: gs://cloud-build--pvt-logs
@@ -21,43 +23,58 @@ steps:
   # Step 2: Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', '${_IMAGE}', '.']
-  # args: ['build', '-t', 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.1', '.']
-
+  
   # Step 3: Push the Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', '${_IMAGE}']
-  # args: ['push', 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.1']
 
-  # Step 4 only for first time deply:
-  # Step 4: Apply the initial deployment if it doesn't exist
-  # - name: 'gcr.io/cloud-builders/kubectl'
-  #   args:
-  #     - 'apply'
-  #     - '-f'
-  #     - 'deployment.yaml'
-  #   env:
-  #     - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
-  #     - 'CLOUDSDK_CONTAINER_CLUSTER=gke-cluster'
-
-  # Step 4: Deploy the application to GKE
+  # Step 4: Apply the initial deployment on the DC cluster if it doesn't exist
   - name: 'gcr.io/cloud-builders/kubectl'
     args:
-     - 'set'
-     - 'image'
-     - 'deployment/${_DEPLOYMENT_NAME}'
-     - '${_DEPLOYMENT_NAME}=${_IMAGE}'
-   ##    - 'deployment/hello-world'
-   ##    - 'hello-world=asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.1'
+      - 'apply'
+      - '-f'
+      - 'deployment.yaml'
     env:
-     - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
-     - 'CLOUDSDK_CONTAINER_CLUSTER=gke-cluster'
+      - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=${_DC_CLUSTER}'
+
+  # Step 5: Apply the initial deployment on the DR cluster if it doesn't exist
+  - name: 'gcr.io/cloud-builders/kubectl'
+    args:
+      - 'apply'
+      - '-f'
+      - 'deployment.yaml'
+    env:
+      - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
+      - 'CLOUDSDK_CONTAINER_CLUSTER=${_DR_CLUSTER}'
+
+# Step 6: Deploy the application to the DC cluster
+# - name: 'gcr.io/cloud-builders/kubectl'
+#   args:
+#     - 'set'
+#     - 'image'
+#     - 'deployment/${_DEPLOYMENT_NAME}'
+#     - '${_DEPLOYMENT_NAME}=${_IMAGE}'
+#   env:
+#     - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
+#     - 'CLOUDSDK_CONTAINER_CLUSTER=${_DC_CLUSTER}'
+
+# Step 7: Deploy the application to the DR cluster
+# - name: 'gcr.io/cloud-builders/kubectl'
+#   args:
+#     - 'set'
+#     - 'image'
+#     - 'deployment/${_DEPLOYMENT_NAME}'
+#     - '${_DEPLOYMENT_NAME}=${_IMAGE}'
+#   env:
+#     - 'CLOUDSDK_COMPUTE_REGION=asia-south1-a'
+#     - 'CLOUDSDK_CONTAINER_CLUSTER=${_DR_CLUSTER}'
 
 # Specify images to build
 images:
-  - '${_IMAGE}'  # Correct use of the substitution
-  #- 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-0.1'
+  - '${_IMAGE}' 
 
 # Specify the worker pool configuration
-options:
-  pool:
-    name: 'projects/stage-443707/locations/asia-south1/workerPools/cloud-build-private-pool'
+#options:
+#  pool:
+#    name: 'projects/stage-443707/locations/asia-south1/workerPools/cloud-build-private-pool'
