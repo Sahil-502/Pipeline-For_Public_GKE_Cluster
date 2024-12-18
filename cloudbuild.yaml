@@ -1,9 +1,9 @@
 # Define substitutions (optional but helps with versioning)
 substitutions:
   _DEPLOYMENT_NAME: 'hello-world'
-  _IMAGE: 'asia-south1-docker.pkg.dev/stage-443707/github-repository/git-imagee:v-1.2'
+  _IMAGE: 'asia-south1-docker.pkg.dev/pvt-stage/stage-repo/stage-project-image:v-1.0'
   _DC_CLUSTER: 'gke-dc-cluster'
-  _DR_CLUSTER: 'gke-dr-cluster'
+  #_DR_CLUSTER: 'gke-dr-cluster'
 
 # Specify the logs bucket to store build logs
 logsBucket: gs://cloud-build--pvt-logs
@@ -39,14 +39,14 @@ steps:
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_DC_CLUSTER}'
 
   # Step 5: Apply the initial deployment on the DR cluster if it doesn't exist
-  - name: 'gcr.io/cloud-builders/kubectl'
-    args:
-      - 'apply'
-      - '-f'
-      - 'deployment.yaml'
-    env:
-      - 'CLOUDSDK_COMPUTE_REGION=asia-south2'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=${_DR_CLUSTER}'
+  # - name: 'gcr.io/cloud-builders/kubectl'
+  #   args:
+  #     - 'apply'
+  #     - '-f'
+  #     - 'deployment.yaml'
+  #   env:
+  #     - 'CLOUDSDK_COMPUTE_REGION=asia-south2'
+  #     - 'CLOUDSDK_CONTAINER_CLUSTER=${_DR_CLUSTER}'
 
 # Step 6: Deploy the application to the DC cluster
 # - name: 'gcr.io/cloud-builders/kubectl'
@@ -77,4 +77,4 @@ images:
 # Specify the worker pool configuration
 options:
   pool:
-    name: 'projects/stage-443707/locations/asia-south1/workerPools/cloud-build-private-pool'
+    name: 'projects/pvt-stage/locations/asia-south1/workerPools/stage-private-pool'
