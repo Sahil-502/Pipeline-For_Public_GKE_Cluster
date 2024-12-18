@@ -37,6 +37,7 @@ steps:
     env:
       - 'CLOUDSDK_COMPUTE_REGION=asia-south1'
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_DC_CLUSTER}'
+      - 'CLOUDSDK_CORE_PROJECT=pvt-stage-1'
 
   # Step 5: Apply the initial deployment on the DR cluster if it doesn't exist
   # - name: 'gcr.io/cloud-builders/kubectl'
