@@ -2,7 +2,7 @@
 substitutions:
   _DEPLOYMENT_NAME: 'hello-world'
   _IMAGE: 'asia-south1-docker.pkg.dev/pvt-stage/stage-repo/stage-project-image:v-1.0'
-  _DC_CLUSTER: 'stage-2-cluster'
+  _DC_CLUSTER: 'c02'
   #_DR_CLUSTER: 'gke-dr-cluster'
 
 # Specify the logs bucket to store build logs
