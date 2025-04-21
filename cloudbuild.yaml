@@ -34,7 +34,7 @@ steps:
       - '-f'
       - 'deployment.yaml'
     env:
-      - 'CLOUDSDK_COMPUTE_REGION=asia-south1'
+      - 'CLOUDSDK_COMPUTE_REGION=us-central1-c'
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_DC_CLUSTER}'
       - 'CLOUDSDK_CORE_PROJECT=pvt-stage-1'
 
