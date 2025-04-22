@@ -6,7 +6,8 @@ substitutions:
   #_DR_CLUSTER: 'gke-dr-cluster'
 
 # Specify the logs bucket to store build logs
-logsBucket: gs://mongo-db-backkup
+#logsBucket: gs://mongo-db-backkup
+logging: 'CLOUD_LOGGING_ONLY'
 steps:
   # Step 1: Debug Step - List files in the current build context
   - name: 'gcr.io/cloud-builders/gcloud'
