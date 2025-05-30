@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx-container-2
-        image: nginx
+        image: asia-south1-docker.pkg.dev/pvt-stage-1/stage-repo/stage-project-image:v-1.0
         ports:
         - containerPort: 80
         resources:
@@ -74,12 +74,12 @@ spec:
         type: Utilization
         averageUtilization: 70   # Target 70% memory usage
 ---
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: pdb-app-deployment
-spec:
-  minAvailable: 1
-  selector:
-    matchLabels:
-      app: nginx-pod
+# apiVersion: policy/v1
+# kind: PodDisruptionBudget
+# metadata:
+#   name: pdb-app-deployment
+# spec:
+#   minAvailable: 1
+#   selector:
+#     matchLabels:
+#       app: nginx-pod
