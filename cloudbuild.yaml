@@ -1,8 +1,8 @@
 # Define substitutions (optional but helps with versioning)
 substitutions:
-  _DEPLOYMENT_NAME: 'hello-world'
+  _DEPLOYMENT_NAME: 'first-app'
   _IMAGE: 'asia-south1-docker.pkg.dev/pvt-stage-1/stage-repo/stage-project-image:v-1.0'
-  _DC_CLUSTER: 'c02'
+  _DC_CLUSTER: 'c01'
   #_DR_CLUSTER: 'gke-dr-cluster'
 
 # Specify the logs bucket to store build logs
