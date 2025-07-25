@@ -3,7 +3,7 @@
 
  Directory of C:\Windows\System32
 
-23-07-2025  02:38 PM    <DIR>          .
+24-07-2025  06:31 PM    <DIR>          .
 22-07-2025  12:07 PM    <DIR>          ..
 22-07-2025  12:04 PM    <DIR>          %userprofile%
 07-05-2022  01:00 PM    <DIR>          0409
@@ -376,8 +376,8 @@
 07-05-2022  01:09 PM           118,784 CastingShellExt.dll
 22-07-2025  11:42 AM           126,976 CastLaunch.dll
 07-05-2022  10:50 AM            92,304 CastSrv.exe
-07-05-2022  11:12 AM    <DIR>          CatRoot
-22-07-2025  12:06 PM    <DIR>          catroot2
+24-07-2025  06:23 PM    <DIR>          CatRoot
+24-07-2025  06:23 PM    <DIR>          catroot2
 22-07-2025  11:41 AM           524,288 catsrv.dll
 07-05-2022  10:49 AM            65,536 catsrvps.dll
 22-07-2025  11:41 AM           544,768 catsrvut.dll
@@ -543,7 +543,7 @@
 22-07-2025  11:41 AM         1,757,184 comsvcs.dll
 07-05-2022  10:49 AM           868,352 comuid.dll
 01-02-2002  07:02 PM           322,640 concrt140.dll
-22-07-2025  07:36 PM    <DIR>          config
+24-07-2025  03:33 PM    <DIR>          config
 22-07-2025  11:41 AM           765,952 configmanager2.dll
 22-07-2025  11:41 AM           114,688 ConfigureExpandedStorage.dll
 22-07-2025  11:41 AM         1,044,480 conhost.exe
@@ -1047,9 +1047,9 @@
 22-07-2025  11:42 AM            73,728 DragDropExperienceCommon.dll
 22-07-2025  11:42 AM            73,728 DragDropExperienceDataExchangeDelegated.dll
 07-05-2022  10:49 AM           102,400 driverquery.exe
-22-07-2025  07:25 PM    <DIR>          drivers
+24-07-2025  03:30 PM    <DIR>          drivers
 07-05-2022  10:54 AM    <DIR>          DriverState
-22-07-2025  03:13 PM    <DIR>          DriverStore
+24-07-2025  03:34 PM    <DIR>          DriverStore
 07-05-2022  10:50 AM            49,152 drprov.dll
 22-07-2025  11:42 AM           290,816 drt.dll
 22-07-2025  11:42 AM            20,911 DrtmAuthTxt.wim
@@ -2745,17 +2745,17 @@
 22-07-2025  11:45 AM    <DIR>          PerceptionSimulation
 22-07-2025  11:42 AM            32,768 PerceptionSimulation.ProxyStubs.dll
 22-07-2025  11:42 AM           794,624 PerceptionSimulationManager.dll
-23-07-2025  02:38 PM           128,806 perfc009.dat
+24-07-2025  06:31 PM           128,806 perfc009.dat
 07-05-2022  10:52 AM            33,424 perfd009.dat
 07-05-2022  10:49 AM            65,536 perfdisk.dll
-23-07-2025  02:38 PM           684,596 perfh009.dat
+24-07-2025  06:31 PM           684,596 perfh009.dat
 07-05-2022  10:52 AM           297,062 perfi009.dat
 22-07-2025  11:42 AM           180,224 perfmon.exe
 07-05-2022  10:50 AM           145,519 perfmon.msc
 07-05-2022  10:49 AM            69,632 perfnet.dll
 07-05-2022  10:49 AM            65,536 perfos.dll
 07-05-2022  10:49 AM            69,632 perfproc.dll
-23-07-2025  02:38 PM           804,924 PerfStringBackup.INI
+24-07-2025  06:31 PM           804,924 PerfStringBackup.INI
 07-05-2022  10:50 AM            81,920 perfts.dll
 22-07-2025  11:41 AM           266,240 PersonalizationCSP.dll
 07-05-2022  10:50 AM            75,792 pfclient.dll
@@ -3360,7 +3360,7 @@
 22-07-2025  11:45 AM    <DIR>          sl-SI
 22-07-2025  11:41 AM           192,512 slc.dll
 22-07-2025  11:41 AM            45,056 slcext.dll
-24-07-2025  11:24 AM    <DIR>          SleepStudy
+25-07-2025  12:38 AM    <DIR>          SleepStudy
 07-05-2022  10:49 AM            38,576 SlideToShutDown.exe
 07-05-2022  01:00 PM    <DIR>          slmgr
 07-05-2022  10:49 AM           142,904 slmgr.vbs
@@ -3462,7 +3462,7 @@
 07-05-2022  01:09 PM            61,440 SrpUxNativeSnapIn.dll
 07-05-2022  10:50 AM           237,568 srrstr.dll
 07-05-2022  10:50 AM            77,824 SrTasks.exe
-24-07-2025  12:02 PM    <DIR>          sru
+25-07-2025  11:03 AM    <DIR>          sru
 07-05-2022  10:50 AM            81,920 srumapi.dll
 07-05-2022  10:50 AM           262,144 srumsvc.dll
 22-07-2025  11:41 AM           142,040 srvcli.dll
@@ -3956,7 +3956,7 @@
 22-07-2025  11:41 AM           344,064 wcnwiz.dll
 22-07-2025  11:41 AM           319,488 wc_storage.dll
 22-07-2025  11:42 AM           864,256 wdc.dll
-22-07-2025  07:23 PM    <DIR>          WDI
+24-07-2025  06:25 PM    <DIR>          WDI
 07-05-2022  10:49 AM           114,688 wdi.dll
 22-07-2025  11:41 AM           327,680 wdigest.dll
 22-07-2025  11:41 AM           278,528 wdmaud.drv
@@ -3972,7 +3972,7 @@
 22-07-2025  11:41 AM         2,732,032 WebRuntimeManager.dll
 22-07-2025  11:41 AM         1,468,400 webservices.dll
 22-07-2025  11:41 AM           102,400 Websocket.dll
-07-05-2022  10:54 AM    <DIR>          WebThreatDefSvc
+24-07-2025  05:32 PM    <DIR>          WebThreatDefSvc
 22-07-2025  11:42 AM           206,208 webthreatdefsvc.dll
 22-07-2025  11:42 AM           312,760 webthreatdefusersvc.dll
 22-07-2025  11:42 AM            98,304 wecapi.dll
@@ -4619,4 +4619,4 @@
 22-07-2025  11:41 AM           614,400 zipfldr.dll
 22-07-2025  11:41 AM            53,248 ztrace_maps.dll
             4478 File(s)  2,228,422,956 bytes
-             137 Dir(s)  203,479,625,728 bytes free
+             137 Dir(s)  210,788,028,416 bytes free
