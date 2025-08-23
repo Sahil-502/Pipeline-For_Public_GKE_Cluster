@@ -3,7 +3,7 @@
 
  Directory of C:\Windows\System32
 
-21-08-2025  07:46 PM    <DIR>          .
+23-08-2025  11:10 AM    <DIR>          .
 21-08-2025  07:41 PM    <DIR>          ..
 22-08-2025  09:10 AM    <DIR>          %userprofile%
 01-04-2024  01:30 PM    <DIR>          0409
@@ -11,7 +11,7 @@
 21-08-2025  04:46 PM            26,016 0ae3b998-9a38-4b72-a4c4-06849441518d_Servicing-Stack.dll
 21-08-2025  04:49 PM            25,984 3bc29097-7317-41d3-93b9-38a48f99d48a_mssrch.dll
 21-08-2025  04:47 PM            26,016 4545ffe2-0dc4-4df4-9d02-299ef204635e_hvsocket.dll
-21-08-2025  07:42 PM                 0 5E37410B-D6F1-471D-AE27-563CEAC0D6B2
+23-08-2025  11:06 AM               292 5E37410B-D6F1-471D-AE27-563CEAC0D6B2
 21-08-2025  04:46 PM            26,016 69fe178f-26e7-43a9-aa7d-2b616b672dde_eventlogservice.dll
 21-08-2025  04:46 PM            26,032 6bea57fb-8dfb-4177-9ae8-42e8b3529933_RuntimeDeviceInstall.dll
 01-04-2024  12:52 PM             3,176 @AdvancedKeySettingsNotification.png
@@ -395,7 +395,7 @@
 21-08-2025  04:47 PM           126,976 CastLaunch.dll
 21-08-2025  04:47 PM            92,400 CastSrv.exe
 01-04-2024  01:04 PM    <DIR>          CatRoot
-21-08-2025  07:43 PM    <DIR>          catroot2
+23-08-2025  11:18 AM    <DIR>          catroot2
 21-08-2025  04:48 PM           507,904 catsrv.dll
 01-04-2024  12:52 PM            69,632 catsrvps.dll
 21-08-2025  04:48 PM           516,096 catsrvut.dll
@@ -1064,9 +1064,9 @@
 21-08-2025  04:46 PM         1,119,632 dpx.dll
 21-08-2025  04:47 PM            73,728 DragDropExperienceDataExchangeDelegated.dll
 21-08-2025  04:46 PM           106,496 driverquery.exe
-21-08-2025  07:41 PM    <DIR>          drivers
+23-08-2025  11:06 AM    <DIR>          drivers
 01-04-2024  12:56 PM    <DIR>          DriverState
-21-08-2025  07:43 PM    <DIR>          DriverStore
+23-08-2025  11:18 AM    <DIR>          DriverStore
 01-04-2024  12:52 PM            53,248 drprov.dll
 21-08-2025  04:48 PM            21,843 DrtmAuthTxt.wim
 21-08-2025  04:46 PM           475,136 drvinst.exe
@@ -2054,7 +2054,7 @@
 21-08-2025  04:47 PM           458,752 LockScreenData.dll
 21-08-2025  04:48 PM           106,496 lodctr.exe
 21-08-2025  04:47 PM           131,072 logagent.exe
-21-08-2025  07:43 PM    <DIR>          LogFiles
+23-08-2025  11:18 AM    <DIR>          LogFiles
 21-08-2025  04:47 PM           102,400 loghours.dll
 21-08-2025  04:48 PM           118,784 logman.exe
 01-04-2024  01:33 PM            49,152 logoff.exe
@@ -2810,10 +2810,10 @@
 22-08-2025  09:10 AM    <DIR>          PerceptionSimulation
 01-04-2024  12:52 PM            36,864 PerceptionSimulation.ProxyStubs.dll
 21-08-2025  04:48 PM           794,624 PerceptionSimulationManager.dll
-21-08-2025  07:46 PM           130,174 perfc009.dat
+23-08-2025  11:10 AM           130,174 perfc009.dat
 01-04-2024  12:54 PM            33,424 perfd009.dat
 21-08-2025  04:46 PM            69,632 perfdisk.dll
-21-08-2025  07:46 PM           669,570 perfh009.dat
+23-08-2025  11:10 AM           669,570 perfh009.dat
 01-04-2024  12:54 PM           277,076 perfi009.dat
 21-08-2025  04:49 PM           180,224 perfmon.exe
 01-04-2024  12:52 PM           145,519 perfmon.msc
@@ -2821,7 +2821,7 @@
 21-08-2025  04:46 PM           114,688 PerformanceTraceHandler.dll
 21-08-2025  04:48 PM            69,632 perfos.dll
 21-08-2025  04:48 PM            73,728 perfproc.dll
-21-08-2025  07:46 PM           791,266 PerfStringBackup.INI
+23-08-2025  11:10 AM           791,266 PerfStringBackup.INI
 21-08-2025  04:47 PM            86,016 perfts.dll
 21-08-2025  04:46 PM           262,144 PersonalizationCSP.dll
 21-08-2025  04:47 PM            84,136 pfclient.dll
@@ -3445,7 +3445,7 @@
 21-08-2025  04:58 PM    <DIR>          sl-SI
 21-08-2025  04:47 PM           195,712 slc.dll
 21-08-2025  04:48 PM            49,152 slcext.dll
-22-08-2025  04:37 AM    <DIR>          SleepStudy
+23-08-2025  12:38 PM    <DIR>          SleepStudy
 01-04-2024  12:52 PM            42,696 SlideToShutDown.exe
 01-04-2024  01:30 PM    <DIR>          slmgr
 01-04-2024  12:52 PM           145,712 slmgr.vbs
@@ -3546,7 +3546,7 @@
 21-08-2025  04:47 PM            61,440 SrpUxNativeSnapIn.dll
 01-04-2024  12:52 PM           241,664 srrstr.dll
 01-04-2024  12:52 PM            81,920 SrTasks.exe
-22-08-2025  11:08 AM    <DIR>          sru
+23-08-2025  01:38 PM    <DIR>          sru
 21-08-2025  04:47 PM            86,016 srumapi.dll
 21-08-2025  04:48 PM           385,024 srumsvc.dll
 21-08-2025  04:47 PM           146,080 srvcli.dll
@@ -4100,7 +4100,7 @@
 21-08-2025  04:46 PM           389,120 wcnwiz.dll
 21-08-2025  04:46 PM           335,872 wc_storage.dll
 21-08-2025  04:48 PM           835,584 wdc.dll
-22-08-2025  04:37 AM    <DIR>          WDI
+23-08-2025  11:07 AM    <DIR>          WDI
 21-08-2025  04:46 PM           126,976 wdi.dll
 21-08-2025  04:46 PM           348,160 wdigest.dll
 21-08-2025  04:46 PM           286,720 wdmaud.drv
@@ -4610,6 +4610,8 @@
 21-08-2025  04:48 PM           299,008 WpcTok.exe
 21-08-2025  04:46 PM           843,776 WpcWebFilter.dll
 21-08-2025  04:47 PM           188,416 wpdbusenum.dll
+21-08-2025  04:48 PM           249,856 WpdMtp.dll
+21-08-2025  04:48 PM           184,320 WpdMtpUS.dll
 21-08-2025  04:47 PM           696,320 wpdshext.dll
 21-08-2025  04:49 PM            57,344 WPDShextAutoplay.exe
 21-08-2025  04:48 PM            90,112 WPDShServiceObj.dll
@@ -4766,5 +4768,5 @@
 21-08-2025  04:48 PM            55,152 ztdnsapi.dll
 21-08-2025  04:48 PM           146,080 zthelper.dll
 21-08-2025  04:49 PM            53,248 ztrace_maps.dll
-            4577 File(s)  2,326,221,168 bytes
-             186 Dir(s)  202,861,027,328 bytes free
+            4579 File(s)  2,326,655,636 bytes
+             186 Dir(s)  203,260,280,832 bytes free
