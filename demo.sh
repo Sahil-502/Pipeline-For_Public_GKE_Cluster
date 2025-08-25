@@ -3,7 +3,7 @@
 
  Directory of C:\Windows\System32
 
-23-08-2025  11:10 AM    <DIR>          .
+23-08-2025  08:26 PM    <DIR>          .
 21-08-2025  07:41 PM    <DIR>          ..
 22-08-2025  09:10 AM    <DIR>          %userprofile%
 01-04-2024  01:30 PM    <DIR>          0409
@@ -395,7 +395,7 @@
 21-08-2025  04:47 PM           126,976 CastLaunch.dll
 21-08-2025  04:47 PM            92,400 CastSrv.exe
 01-04-2024  01:04 PM    <DIR>          CatRoot
-23-08-2025  11:18 AM    <DIR>          catroot2
+25-08-2025  11:20 AM    <DIR>          catroot2
 21-08-2025  04:48 PM           507,904 catsrv.dll
 01-04-2024  12:52 PM            69,632 catsrvps.dll
 21-08-2025  04:48 PM           516,096 catsrvut.dll
@@ -563,7 +563,7 @@
 21-08-2025  04:46 PM         1,691,648 comsvcs.dll
 21-08-2025  04:46 PM           802,816 comuid.dll
 01-02-2002  07:02 PM           322,672 concrt140.dll
-22-08-2025  04:39 AM    <DIR>          config
+24-08-2025  12:09 AM    <DIR>          config
 21-08-2025  04:46 PM           753,664 configmanager2.dll
 21-08-2025  04:46 PM           114,688 ConfigureExpandedStorage.dll
 21-08-2025  04:46 PM         1,036,288 conhost.exe
@@ -1064,9 +1064,9 @@
 21-08-2025  04:46 PM         1,119,632 dpx.dll
 21-08-2025  04:47 PM            73,728 DragDropExperienceDataExchangeDelegated.dll
 21-08-2025  04:46 PM           106,496 driverquery.exe
-23-08-2025  11:06 AM    <DIR>          drivers
+25-08-2025  11:34 AM    <DIR>          drivers
 01-04-2024  12:56 PM    <DIR>          DriverState
-23-08-2025  11:18 AM    <DIR>          DriverStore
+25-08-2025  11:34 AM    <DIR>          DriverStore
 01-04-2024  12:52 PM            53,248 drprov.dll
 21-08-2025  04:48 PM            21,843 DrtmAuthTxt.wim
 21-08-2025  04:46 PM           475,136 drvinst.exe
@@ -2810,10 +2810,10 @@
 22-08-2025  09:10 AM    <DIR>          PerceptionSimulation
 01-04-2024  12:52 PM            36,864 PerceptionSimulation.ProxyStubs.dll
 21-08-2025  04:48 PM           794,624 PerceptionSimulationManager.dll
-23-08-2025  11:10 AM           130,174 perfc009.dat
+23-08-2025  07:58 PM           130,174 perfc009.dat
 01-04-2024  12:54 PM            33,424 perfd009.dat
 21-08-2025  04:46 PM            69,632 perfdisk.dll
-23-08-2025  11:10 AM           669,570 perfh009.dat
+23-08-2025  07:58 PM           669,570 perfh009.dat
 01-04-2024  12:54 PM           277,076 perfi009.dat
 21-08-2025  04:49 PM           180,224 perfmon.exe
 01-04-2024  12:52 PM           145,519 perfmon.msc
@@ -2821,7 +2821,7 @@
 21-08-2025  04:46 PM           114,688 PerformanceTraceHandler.dll
 21-08-2025  04:48 PM            69,632 perfos.dll
 21-08-2025  04:48 PM            73,728 perfproc.dll
-23-08-2025  11:10 AM           791,266 PerfStringBackup.INI
+23-08-2025  07:58 PM           791,266 PerfStringBackup.INI
 21-08-2025  04:47 PM            86,016 perfts.dll
 21-08-2025  04:46 PM           262,144 PersonalizationCSP.dll
 21-08-2025  04:47 PM            84,136 pfclient.dll
@@ -3445,7 +3445,7 @@
 21-08-2025  04:58 PM    <DIR>          sl-SI
 21-08-2025  04:47 PM           195,712 slc.dll
 21-08-2025  04:48 PM            49,152 slcext.dll
-23-08-2025  12:38 PM    <DIR>          SleepStudy
+23-08-2025  07:55 PM    <DIR>          SleepStudy
 01-04-2024  12:52 PM            42,696 SlideToShutDown.exe
 01-04-2024  01:30 PM    <DIR>          slmgr
 01-04-2024  12:52 PM           145,712 slmgr.vbs
@@ -3546,7 +3546,7 @@
 21-08-2025  04:47 PM            61,440 SrpUxNativeSnapIn.dll
 01-04-2024  12:52 PM           241,664 srrstr.dll
 01-04-2024  12:52 PM            81,920 SrTasks.exe
-23-08-2025  01:38 PM    <DIR>          sru
+25-08-2025  11:21 AM    <DIR>          sru
 21-08-2025  04:47 PM            86,016 srumapi.dll
 21-08-2025  04:48 PM           385,024 srumsvc.dll
 21-08-2025  04:47 PM           146,080 srvcli.dll
@@ -3980,6 +3980,8 @@
 21-08-2025  04:46 PM           204,800 verifiergui.exe
 21-08-2025  04:46 PM            55,192 version.dll
 21-08-2025  04:48 PM           216,320 vertdll.dll
+21-08-2025  04:48 PM           159,744 vfpapi.dll
+21-08-2025  04:48 PM           552,960 vfpctrl.exe
 21-08-2025  04:46 PM           131,072 vfuprov.dll
 21-08-2025  04:47 PM            94,208 vfwwdm32.dll
 01-04-2024  12:52 PM            61,440 VhfUm.dll
@@ -4768,5 +4770,5 @@
 21-08-2025  04:48 PM            55,152 ztdnsapi.dll
 21-08-2025  04:48 PM           146,080 zthelper.dll
 21-08-2025  04:49 PM            53,248 ztrace_maps.dll
-            4579 File(s)  2,326,655,636 bytes
-             186 Dir(s)  203,260,280,832 bytes free
+            4581 File(s)  2,327,368,340 bytes
+             186 Dir(s)  204,969,492,480 bytes free
